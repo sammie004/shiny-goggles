@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View-all Tasks</title>
+    <link rel="stylesheet" href="view all.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="transition-overlay"></div>
+    <section class="sidebar" id="sidebar">
+        <nav class="sidebar">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                    <img src="mr rabbit.jfif" alt="bunny">
+                </span>
+                    <div class="text header-text">
+                        <span class="name">Task bunny</span>
+                        <span class="profession">Your task manager</span>
+                    </div>
+                </div>
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links">
+                        <li id="home">
+                            <a href="trial.html">
+                                <i class='bx bx-home-alt icon'></i>
+                                <span class="text nav-text">Home</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-links">
+                        <li id="completed">
+                            <a href="completed.html">
+                                <i class='bx bx-check-circle icon'></i>
+                                <span class="text nav-text">completed</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-links">
+                        <li id="view-all">
+                            <a href="view-all.html">
+                                <i class='bx bx-glasses icon'></i>
+                                <span class="text nav-text">View All</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-links">
+                        <li id="deleted">
+                            <a href="deleted.html">
+                                <i class='bx bxs-trash icon'></i>
+                                <span class="text nav-text">Deleted</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+            </div>
+        </nav>
+    </section>
+    <h2>
+        <i class='bx bx-glasses bx-tada bx-md'></i></i>ALL TASKS
+    </h2>
+    <section class="view-now">
+        <div class="viewer" id="view-all">
+            <div id="all-tasks-container"></div>
+
+
+        </div>
+    </section>
+    <script src="view-all.js"></script>
+</body>
+
+</html>

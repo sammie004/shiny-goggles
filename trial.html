@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="trial.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="transition-overlay"></div>
+    <section class="sidebar" id="sidebar">
+        <nav class="sidebar">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                    <img src="mr rabbit.jfif" alt="bunny">
+                </span>
+                    <div class="text header-text">
+                        <span class="name">Task bunny</span>
+                        <span class="profession">Your task manager</span>
+                    </div>
+                </div>
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links">
+                        <li id="home">
+                            <a href="trial.html">
+                                <i class='bx bx-home-alt icon'></i>
+                                <span class="text nav-text">Home</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-links">
+                        <li id="completed">
+                            <a href="completed.html">
+                                <i class='bx bx-check-circle icon'></i>
+                                <span class="text nav-text">completed</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-links">
+                        <li id="view-all">
+                            <a href="view-all.html">
+                                <i class='bx bx-glasses icon'></i>
+                                <span class="text nav-text">View All</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-links">
+                        <li id="deleted">
+                            <a href="deleted.html">
+                                <i class='bx bxs-trash icon'></i>
+                                <span class="text nav-text">Deleted</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+            </div>
+        </nav>
+    </section>
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">
+                welcome,<input type="text" id="name" placeholder="name">
+            </h2>
+        </section>
+        <section class="create-todo">
+            <h3>create a list</h3>
+            <form id="new-todo-form">
+                <h4>whats on your list today?</h4>
+                <input type="text" name="content" id="content" placeholder="eg. do the dishes" />
+                <h4>pick a category</h4>
+                <div class="options">
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="category" 
+                            id="category1" 
+                            value="non-personal"/>
+                        <span class="bubble non-personal"> </span>
+                        <div>non-personal</div>
+                    </label>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="category" 
+                            id="category2" 
+                            value="personal"/>
+                        <span class="bubble personal"> </span>
+                        <div>personal</div>
+                    </label>
+                </div>
+                <input type="submit" value="Add Task" />
+            </form>
+        </section>
+
+        <section class="todo-list">
+            <h3>TODO LIST</h3>
+            <div class="list" id="todo-list">
+                <!-- <div class="todo-item done">
+                    <label class="check1">
+                        <input type="checkbox" />
+                        <span class="bubble non-personal"></span>
+                    </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="make a video" readonly />
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <label>
+                            <input type="checkbox" />
+                            <span class="bubble personal"></span>
+                        </label>
+
+                    <div class="todo-content">
+                        <input type="text" value="get milk" readonly />
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>-->
+            </div>
+            <button id="view">View All</button>
+        </section>
+    </main>
+    <div class="pop-up">
+        <audio src="failure-drum-sound-effect-2-7184.mp3" id="audio" ></audio>
+        <img src="x mark for pop-up.jpeg" alt="" id="x-mark">
+        <h3 class="error_msg">oops!</h3>
+        <p class="pop-up_info">you need to enter a task first</p>
+    </div>
+    <script src="trial.jsx"></script>
+    <script src="practice.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login_new.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign up</h1>
+            <form action="#">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class='bx bx-user icon'></i>
+                        <input type="text" placeholder="Enter your name here" id="name" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class='bx bx-envelope icon'></i>
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class='bx bx-lock-alt icon'></i>
+                        <input type="password" id="password" name="password" placeholder="password" required>
+                    </div>
+                    <p id="error_message">sleep nigga</p>
+                    <p>lost password <a href="#">Click here</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign up</button>
+                    <button type="button" id="signinBtn" class="disable">Sign in</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="login_new.jsx"></script>
+</body>
+
+</html>
